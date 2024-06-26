@@ -4,7 +4,6 @@ const db = require("./../../mongoDB");
 const config = require("../../config");
 const client = require("../../bot");
 module.exports = async (interaction) => {
-if(!config.EnableJOINTOCREATE) return;
   try {
     switch (interaction.customId) {
         case "ZiVClock":
