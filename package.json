@@ -1,0 +1,28 @@
+{
+  "name": "zibot-beta",
+  "version": "1.2.0",
+  "description": "Ziji discord bot",
+  "main": "index.js",
+  "scripts": {
+    "test": "test.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/zijipia/Zibot.git"
+  },
+  "keywords": [
+    "Ziji"
+  ],
+  "author": "Ziji",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/zijipia/Zibot/issues"
+  },
+  "homepage": "https://github.com/zijipia/Zibot#readme",
+  "dependencies": {
+    "canvacord": "^6.0.2",
+    "discord.js": "^14.15.2",
+    "dotenv": "^16.4.5",
+    "mongoose": "^7.6.8"
+  }
+}
