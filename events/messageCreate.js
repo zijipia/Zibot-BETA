@@ -1,5 +1,6 @@
 const { EmbedBuilder, ActionRowBuilder, ButtonBuilder, ButtonStyle } = require("discord.js");
 const config = require("../config");
+const mongoDB = require("../mongoDB");
 
 
 const handleBotMention = async (message, client, lang, content) => {
@@ -36,7 +37,7 @@ module.exports = async (client, message) => {
 
 
     if (botMentionRegex.test(content) && !message.reference) {
-        let lang = await db?.ZiUser?.findOne({ userID: member.id })
+        let lang = await mongoDB?.ZiUser?.findOne({ userID: member.id })
         lang = lang?.lang || `vi`
         lang = require(`../lang/${lang}.js`);
         return handleBotMention(message, client, lang, content);
